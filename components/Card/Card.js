@@ -9,15 +9,16 @@ const Card = (props) => {
   const { addToCart, removeFromCart, cart } = useContext(CartContext);
 
   return (
-    <div class="relative m-10 w-[400px] h-fit max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+    <div class="relative m-10 w-[400px] h-[450px] max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
       <Link href={`/detail/${id}`}>
         <div className="flex justify-center">
-          <img
-            class=" p-3 h-60 rounded-t-lg object-cover hover:scale-[1.1] duration-300	"
+          <Image
             src={props.src}
             alt="product image"
+            width={300} // Set the desired width (you can adjust this)
+            height={300} // Set the desired height (you can adjust this)
+            className="p-3 h-60 rounded-t-lg object-scale-down hover:scale-[1.1] duration-300"
           />
-             
         </div>
       </Link>
       <div class="mt-4 px-5 pb-5">
