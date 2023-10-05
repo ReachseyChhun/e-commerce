@@ -1,0 +1,40 @@
+.title {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: start;
+  color: #1e1e1e;
+  opacity: 0.8;
+  /* text-decoration: underline; */
+  margin-top: 1em;
+  font-size: 2em;
+  /* background-color: #ef9a53; */
+  border-radius: 10px;
+  padding-left: 2.5em;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .loading {
+    font-size: 1.5em;
+  }
+}
