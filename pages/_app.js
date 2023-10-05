@@ -3,6 +3,8 @@ import Layout from "../components/Layout/Layout";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import GlobalState from "../Context/GlobalState";
+import NextNProgress from 'nextjs-progressbar';
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -29,6 +31,8 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         )}
       </GlobalState>
+      <NextNProgress color="white" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
+
     </>
   );
 }

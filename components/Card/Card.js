@@ -25,7 +25,7 @@ const Card = (props) => {
           {props.name}
         </h5>
         <div class="mt-2.5 mb-5 flex items-center">
-          <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
+          <span class="mr-2 rounded bg-blue-600 px-2.5 py-0.5 text-xs text-white font-semibold">
             {props.rating}
           </span>
           {props.category}
@@ -37,7 +37,7 @@ const Card = (props) => {
             </span>
           </p>
           <button
-            class="flex justify-center items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+            class="flex justify-center items-center rounded-md bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
             onClick={() => addToCart(props)}
           >
             <svg
@@ -58,52 +58,6 @@ const Card = (props) => {
         </div>
       </div>
     </div>
-    // <div className={classes.container}>
-    //   <div className={classes.imageContainer}>
-    //     <Image
-    //       src={src}
-    //       width="300"
-    //       height="300"
-    //       alt="Cocktail"
-    //       quality={100}
-    //       style={{
-    //         borderTopRightRadius: "10px",
-    //         borderTopLeftRadius: "10px",
-    //       }}
-    //     />
-    //   </div>
-    //   <div className={classes.cocktailContent}>
-    //     <div className={classes.name}>{name}</div>
-    //     <div className={classes.category}>{category}</div>
-    //     <div className={classes.price}>$ {price}</div>
-    //   </div>
-    //   <div className={classes.action}>
-    //     <div className={classes.btn}>
-    //       <Link href={`/detail/${id}`}>More info</Link>
-    //     </div>
-    //     <div className={classes.counter}>
-    //       <button
-    //         className={classes.actionBtn}
-    //         onClick={() => removeFromCart(id)}
-    //       >
-    //         -
-    //       </button>
-    //       {cart.findIndex((val) => val.id === id) != -1 ? (
-    //         <div className={classes.count}>
-    //           {cart[cart.findIndex((val) => val.id === id)].quantity}
-    //         </div>
-    //       ) : (
-    //         0
-    //       )}
-    // <button
-    //   className={classes.actionBtn}
-    //   onClick={() => addToCart(props)}
-    // >
-    //   +
-    // </button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

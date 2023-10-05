@@ -80,7 +80,7 @@ const SignUp = () => {
     <div className="w-screen h-screen mx-auto flex items-center">
       <div className="w-1/2 h-screen flex justify-center items-center flex-col">
         <h1 className="text-5xl mb-12 text-blue-400 font-bold">
-          Welcome to Cocktailer !
+          Welcome to E-Commerce !
         </h1>
         <Formik
           initialValues={{
