@@ -1,7 +1,7 @@
-import classes from "../styles/Home.module.css";
-import Card from "../components/Card/Card";
+import classes from "../../styles/Home.module.css";
+import Card from "../../components/Card/Card";
 import { useContext, useEffect, useState } from "react";
-import CartContext from "../Context/CartContext";
+import CartContext from "../../Context/CartContext";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -195,7 +195,7 @@ function Home({ products, allProducts, categories }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(id) {
   const products = await fetch(
     "http://localhost:8080/api/v1/products?page=0&size=4&sortDirection=desc"
   ).then((res) => res.json());

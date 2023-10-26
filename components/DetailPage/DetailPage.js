@@ -85,12 +85,12 @@ const DetailPage = (props) => {
                 </p>
                 <p class="max-w-md text-gray-700">{props.description} </p>
                 <p class="mt-4 mb-6 text-md font-bold text-gray-700 ">
-                  {props.rating.count} Sold
+                  {/* {props.rating.count} Sold */}
                 </p>
               </div>
               <div class="mb-8">
                 <h2 class="w-16 pb-1 mb-4 text-2xl font-bold border-b border-blue-300 text-gray-400 dark:border-gray-600">
-                  Rating {props.rating.rate}
+                  {/* Rating {props.rating.rate} */}
                 </h2>
               </div>
               <div class="flex flex-wrap items-center gap-4">

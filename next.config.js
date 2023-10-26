@@ -6,12 +6,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "fakestoreapi.com", // Change this to the new domain
+        hostname: "res.cloudinary.com", // Change this to the new domain
         port: "",
         pathname: "/images/**", // Adjust the pathname as needed
       },
     ],
-    domains: ["fakestoreapi.com"],
+    domains: ["res.cloudinary.com"],
   },
 };
 

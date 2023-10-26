@@ -10,7 +10,7 @@ function ProductDetails() {
   const { addToCart, removeFromCart, cart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`)
+    fetch(`http://localhost:8080/api/v1/products/${id}`)
       .then(async (res) => {
         return await res.json();
       })
@@ -23,11 +23,11 @@ function ProductDetails() {
       {product ? (
         <DetailPage
           id={product.id}
-          src={product.image}
+          src={product.thumbnail}
           category={product.category}
           name={product.title}
           price={product.price}
-          rating={product.rating}
+          // rating={product.rating}
           description={product.description}
         />
       ) : (

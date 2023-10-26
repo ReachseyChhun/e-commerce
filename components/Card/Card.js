@@ -9,7 +9,7 @@ const Card = (props) => {
   const { addToCart, removeFromCart, cart } = useContext(CartContext);
 
   return (
-    <div class="relative m-10 w-[400px] h-[450px] max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+    <div class="relative m-10 w-[350px] h-[450px] max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
       <Link href={`/detail/${id}`}>
         <div className="flex justify-center">
           <Image
